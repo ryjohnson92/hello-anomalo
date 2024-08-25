@@ -1,7 +1,7 @@
 
 # Hello Anomalo
 
-Here is a breif demo for you and your team to see what I can demo
+Here is a breif demo for you and your team to see what I can do.
 
 
 
