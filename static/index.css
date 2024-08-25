@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+:root{
+    --anmlo-gradient:linear-gradient(270deg, #7252fb, #fe8065); 
+    --anmlo-blue:#7252fb
+}
+body{
+    display:flex;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+.anmlo_header{
+    width:100vw;
+    min-height: 50px;
+    max-height:5vh;
+    background-color: var(--anmlo-blue);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.anmlo_header:hover{
+    cursor: pointer;
+}
+.anmlo_header span{
+    flex:1;
+    text-align: center;
+    font-weight: bolder;
+}
+.anmlo_header svg{
+    /* margin-left:auto; */
+    /* margin-left: 10vw; */
+    margin-right: 1vmin;
+    height: 100%;
+    width:5vh;
+    aspect-ratio: 1;
+    
+}
+.anmlo_hello{
+    width:100%;
+    height:10vh;
+    display: flex;
+    padding-left: 2vw;
+    flex-direction: row;
+    align-items: center;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+.anmlo_hello h1{
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    font-size: 5.5vmin;
+    font-weight: 530;
+}
+.anmlo_content_wrapper{
+    flex:1;
+    margin-right: 2vmin;
+    margin-left: 2vmin;
+    max-height: 80vh;
+    min-height: 80vh;
+    background-color: #7252fb08;
+}
+.anmlo_footer{
+    height:5vmin;
+    margin-bottom: 1vmin;
+    margin-right: 2vmin;
+    margin-left: 2vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(0,0,0,.55);
+    font-size: small;
+    background-color: #fff;
+}
+.anmlo_card{
+    display:none;
+    width:100%;
+    max-height: 75vh;
+    /* background-color: #7252fb08; */
+    height:0;
+    flex-direction: column;
+    padding-top: 2vh;
+    margin-top: 2vh;
+    padding-left: 2vw;
+    transition: all ease 1s;
+    overflow: hidden;
+}
+.anmlo_card svg{
+    height:4vh;
+}
+.anmlo_card_wrap{
+    width:20vw;
+    height:5vh;
+}
+.anmlo_card h2{
+    height:7vh;
+    font-size: 5vh;
+    font-weight: 500;
+}
+.anmlo_card p{
+    margin-top: 2.5vh;
+    /* margin-bottom: 10vh; */
+    font-size: 3vmin;
+}
+.anmlo_card button{
+    background-color: var(--anmlo-blue);
+    height:10vh;
+    width:20vw;
+    border-radius: 1vmin;
+    color:white;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 2.5vh;
+    margin-top: 5vmin;
+}
+.anmlo_card button:hover{
+    background-color: white;
+    border: 1px solid var(--anmlo-blue);
+    color:var(--anmlo-blue);
+    -webkit-box-shadow: 0 0 2px var(--anmlo-blue);
+    box-shadow: 0 0 2px var(--anmlo-blue);
+    cursor: pointer;
+}
+.anmlo_card_wrap_ab{
+    flex-direction: column;
+    flex:1;
+    max-height: 75vh;
+}
+.anmlo_card_wrap_a{
+    height:75%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+}
+.anmlo_card_wrap_b{
+    height:25%;
+}
+.anmlo_card_wrap_section_a{
+    flex:1;
+}
+.anmlo_card_wrap_section_b{
+    width:35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anmlo_card_sectionb_svg_wrap{
+    width:80%;
+    color:#FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+    border-radius: 2vmin;
+    background: var(--anmlo-gradient);
+    margin-top: 2vmin;
+}
+.anmlo_card_sectionb_svg_wrap svg, .anmlo_card_sectionb_svg_wrap img{
+    height: 25vh;
+    transition: all ease .5s;
+}
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    80% { transform: rotate(0deg); }
+    85% { transform: rotate(5deg); }
+    95% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+.anmlo_experience_nav{
+    flex:1;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    gap: 2vmin;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.anmlo_experience_nav img{
+    height: 10vh;
+    transition: all ease 1;
+    animation-delay: 0;
+}
+.anmlo_experience_nav img:hover{
+    height: 15vh;
+}
+.anmlo_experience_text_wrapper{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anmlo_experience_stack_text{
+    background-color: white;
+    box-shadow: 0 8px 20px 0 #7252fb26;
+    flex:1;
+    max-width: 50%;
+    max-height: 90%;
+    padding: 4vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.anmlo_card_json_disp_wrap{
+    background-color: black;
+    flex:1;
+}
+.anmlo_card_json_disp{
+    color:limegreen;
+    margin-top: 2vmin;
+}

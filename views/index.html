@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript"> let page; </script>
+        <script type="module" src="/static/index.js"></script>
+        <link rel="stylesheet" href="/static/index.css">
+    </head>
+    <body>
+        <div class="anmlo_header" title="Download">
+            <span>&#127881; Download a free copy of my resume!</span>
+            <!-- https://icons.getbootstrap.com/ -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+        </div>
+        <div class="anmlo_hello">
+            <h1>Hello,</h1><img src="https://www.anomalo.com/wp-content/uploads/2024/01/logo.svg"/>
+        </div>
+        <div class="anmlo_content_wrapper">
+            {% include './parts/card0.html' %}
+            {% include './parts/card1.html' %}
+            {% include './parts/card2.html' %}
+            {% include './parts/card3.html' %}
+        </div>
+        <div class="anmlo_footer">
+            The content and styling provided here are used for demo purposes only.
+        </div>
+    </body>
+</html>
