@@ -13,6 +13,5 @@ RUN mkdir /opt/anomalo_demo
 WORKDIR /opt/anomalo_demo
 COPY . .
 
-HEALTHCHECK --interval=30s --timeout=3s --retries=3 CMD ['python3.11','/opt/anomalo_demo/healthcheck.py']
 ENTRYPOINT ["/usr/bin/python3.11"]
 CMD ["/opt/anomalo_demo/index.py"]
