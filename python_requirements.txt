@@ -2,3 +2,4 @@ flask
 flask-session
 redis
 dateparser
+prometheus_client
